@@ -1,1 +1,49 @@
-Coming Soon
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+
+		
+
+		<link rel="stylesheet" href="/internal/assets/start-d2ab553f.css">
+		<link rel="modulepreload" href="/internal/start-e0b1e583.js">
+		<link rel="modulepreload" href="/internal/chunks/vendor-7cb0d464.js">
+		<link rel="modulepreload" href="/internal/layout.svelte-46229d86.js">
+		<link rel="modulepreload" href="/internal/pages/index.svelte-0611fdcd.js">
+
+		<script type="module">
+			import { start } from "/internal/start-e0b1e583.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/internal/layout.svelte-46229d86.js"),
+						import("/internal/pages/index.svelte-0611fdcd.js")
+					],
+					url: new URL("http://prerender/"),
+					params: {}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<h1>Welcome to SvelteKit</h1>
+<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+
+</div>
+	</body>
+</html>
